@@ -1,0 +1,30 @@
+name: Push Docker image
+
+on: 
+  push:
+    branches: [main,master]
+
+env:
+  DOCKER_BUILDKIT: 1
+  repository_name: penguincabinet/reminder_discord_bot
+  IMAGE_NAME: docker
+  IMAGE_TAG: latest
+
+jobs:
+  build:
+    name: Build image
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Login GitHub Registry
+        run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u owner --password-stdin
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v3
+        with:
+          buildx-version: latest
+          qemu-version: latest
+      - name: Build image
+        run: docker buildx build -t ghcr.io/${repository_name}/${IMAGE_NAME}:${IMAGE_TAG} --file Dockerfile . --platform linux/arm/v7,linux/amd64 --push
+

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  bot:
+    build: .
+    restart: always
+    environment: 
+        BOT_KEY: ${ano-ojosama-bot:-default} #"<DISCORD_BOT_KEY>"
+        #TEMP_RAM_SIZE: "256m"
+    volumes: 
+    - ./src:/src
+    #privileged: true

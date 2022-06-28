@@ -1,0 +1,11 @@
+version: '3'
+services:
+  bot:
+    image: ghcr.io/penguincabinet/reminder_discord_bot/docker:latest
+    restart: always
+    environment: 
+        BOT_KEY: ${reminder_BOT_KEY:-default} #"<DISCORD_BOT_KEY>"
+        #TEMP_RAM_SIZE: "256m"
+    volumes: 
+    - ./src:/src
+    #privileged: true

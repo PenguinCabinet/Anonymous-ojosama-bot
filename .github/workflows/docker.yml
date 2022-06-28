@@ -6,7 +6,7 @@ on:
 
 env:
   DOCKER_BUILDKIT: 1
-  repository_name: penguincabinet/reminder_discord_bot
+  repository_name: penguincabinet/Anonymous-ojosama-bot
   IMAGE_NAME: docker
   IMAGE_TAG: latest
 

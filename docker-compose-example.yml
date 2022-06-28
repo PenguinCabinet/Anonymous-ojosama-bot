@@ -1,7 +1,7 @@
 version: '3'
 services:
   bot:
-    image: ghcr.io/penguincabinet/Anonymous-ojosama-bot/docker:latest
+    image: ghcr.io/penguincabinet/anonymous-ojosama-bot/docker:latest
     restart: always
     environment: 
         BOT_KEY: ${ano-ojosama-bot:-default} #"<DISCORD_BOT_KEY>"
@@ -9,4 +9,3 @@ services:
     volumes: 
     - ./src:/src
     #privileged: true
-    

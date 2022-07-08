@@ -29,7 +29,7 @@ git clone https://github.com/PenguinCabinet/Anonymous-ojosama-bot
 cd Anonymous-ojosama-bot
 vim docker-compose-example.yml 
 # docker-compose-example.ymlの環境変数のBOT_KEYに開発者ページで作成したDiscord BotのKeyを入力してください
-#もしくはホストOS上で"export ano-ojosama-bot=<your discord bot key>"を実行します
+#もしくはホストOS上で"export ano_ojosama_bot=<your discord bot key>"を実行します
 docker-compose -f docker-compose-example.yml up -d
 ```
 
@@ -42,7 +42,7 @@ git clone https://github.com/PenguinCabinet/Anonymous-ojosama-bot
 cd Anonymous-ojosama-bot
 vim docker-compose.yml 
 # docker-compose.ymlの環境変数のBOT_KEYに開発者ページで作成したDiscord BotのKeyを入力してください
-#もしくはホストOS上で"export ano-ojosama-bot=<your discord bot key>"を実行します
+#もしくはホストOS上で"export ano_ojosama_bot=<your discord bot key>"を実行します
 docker-compose up -d
 ```
 

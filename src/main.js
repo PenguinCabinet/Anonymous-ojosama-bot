@@ -1,5 +1,6 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+//const Discord = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
+const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES"]}, {partials: ["MESSAGE", "CHANNEL", "REACTION"] });
 const exec=require("child_process").exec;
 
 /*
@@ -60,7 +61,7 @@ client.on('disconnect',message=>
 	connection[message.guild.id]=null;
 });
 
-client.on('message', (async function(message)
+client.on('messageCreate', (async function(message)
 {
 	if(message.content.slice(0,1)=="!"){
 		return;
@@ -78,8 +79,9 @@ client.on('message', (async function(message)
 
 }));
 
+console.log(process.env.BOT_KEY);
 
 client.login(process.env.BOT_KEY);
 
-console.log("software started test");
+console.log("software started");
 

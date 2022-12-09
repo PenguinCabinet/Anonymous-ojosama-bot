@@ -1,3 +1,4 @@
+[![Discord](https://img.shields.io/discord/1050693891311030283.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/9JzDyKYyX8)   
 # 🫖匿名希望お嬢様Bot
 匿名希望お嬢様Botは[ojosama](https://github.com/jiro4989/ojosama)を利用したお嬢様口調の匿名サロンを実現しますわ!!
 

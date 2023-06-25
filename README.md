@@ -10,7 +10,10 @@
 また違法性のある投稿は禁止です。ログを残していますのでご了承ください。   
 
 # 📨稼働中のクラウド版
-[招待](https://discord.com/oauth2/authorize?client_id=821662757794349066&permissions=11264&scope=bot)
+~~[招待](https://discord.com/oauth2/authorize?client_id=821662757794349066&permissions=11264&scope=bot)~~    
+現在、不適切な投稿の対応が出来ていないため、クラウド版を停止しています。   
+お急ぎの方は、オンプレミス環境で構築の上、使用してください。
+
 
 # 📒使い方
 Discordサーバーに匿名希望お嬢様Botを導入して、「匿名お嬢様」というチャンネルを作ってください。  
